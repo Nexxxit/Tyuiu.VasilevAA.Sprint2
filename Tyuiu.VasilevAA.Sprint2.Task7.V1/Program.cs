@@ -14,6 +14,15 @@ namespace Tyuiu.VasilevAA.Sprint2.Task7.V1
         {
             DataService ds = new DataService();
 
+            double x,y;
+
+            Console.WriteLine("Введите х: ");
+            x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите y: ");
+            y = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Результат: " + ds.CheckDotInShadedArea(x,y));
+            Console.ReadKey();
         }
     }
 }
